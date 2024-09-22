@@ -114,7 +114,7 @@ class BBSyncController:
         self.tray.set_logged_in(auth)
         self.login_window.setVisible(False)
         self.app.restoreOverrideCursor()
-        self._check_for_updates()
+        # self._check_for_updates()
         self.tray.show_msg(*(self.tray_msg["download_started"]))
 
     def _reset_setup(self) -> None:
